@@ -5,9 +5,6 @@ import android.os.Bundle
 import android.widget.TextView
 import android.widget.Button
 import android.widget.Spinner
-
-
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             val color = beerColor.selectedItem.toString()
             val brands = findViewById<TextView>(R.id.brands)
             brands.text = "${getBeers(color).joinToString(" " + "\n")}"
-            //brands.text=found.joinToString("\n")
+            //brands.text=found.joinToString("\n") alternative
 
         }
     }
